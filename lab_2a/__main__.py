@@ -15,7 +15,11 @@ def main(text):
     print(f"We are in the {__name__}")
     print(common.get_current_date().now())
     print(common.get_current_platform())
-    if text:
+    if text == "True":
+        print("Парні числа: ", common.odds_or_evens(True))
+    elif text == "False":
+        print("Непарні числа: ", common.odds_or_evens(False))
+    elif text:
         print("З консолі було передано аргумент\n", 10*"=", f">> {text} <<", 10*"=")
 
 
@@ -31,4 +35,8 @@ if __name__ == '__main__':
         how_to_write_logs()
     else:
         main(args.opt)
+    if common.possible_error():
+        logging.info("Error didn`t occured")
+    else:
+        logging.error("Error occured!")
     print("test")
