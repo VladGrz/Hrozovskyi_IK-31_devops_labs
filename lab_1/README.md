@@ -29,4 +29,4 @@
 
 
 10. У новостворену папку закомітив графічний файл. Використовуючи властивості форматування MarkDown, вношу зміни у файл _README.md_ та роблю так, щоб ця картинка відображалась на головній сторінці;  
-![Logo](https://github.com/VladGrz/Hrozovskyi_IK-31_devops_labs/blob/master/lab1/github_logo.jpg "GitHubLogo")
+![Logo](https://github.com/VladGrz/Hrozovskyi_IK-31_devops_labs/blob/master/lab_1/github_logo.jpg "GitHubLogo")
