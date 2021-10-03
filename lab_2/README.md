@@ -61,3 +61,32 @@ def test_home_work(self):
     self.assertEqual(home_work("01:37:31 AM"), "Доброго дня")
 ```
 10. За допомогою команд `pytest tests/tests.py > results.txt` та `python app.py >> results.txt` перенаправив результат виконання тестів, а також результат виконання програми, у файл _results.txt_.
+11. Зробив коміт зі змінами до репозиторію.
+12. Заповнюю _Makefile_ необхідними командами (bash) для повної автоматизації процесу СІ.
+```bash
+.DEFAULT_GOAL := all
+
+all: install test run deploy
+
+install:
+	@echo "Installing pipenv and dependencies."
+	pip install pipenv
+	pipenv --python 3.8
+	pipenv install requests
+	pipenv install ntplib
+	pipenv install pytest
+
+test:
+	@echo "Starting tests."
+	pipenv run pytest tests/tests.py > results.txt
+
+run:
+	@echo "Running Python app."
+	pipenv run python app.py >> results.txt
+
+deploy:
+	@echo "Adding and Committing results.txt to git."
+	git add results.txt
+	git commit -m "Lab_2: commiting by makefile"
+	git push
+```
