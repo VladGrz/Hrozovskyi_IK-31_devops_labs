@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-6.2.5, py-1.10.0, pluggy-1.0.0
+rootdir: /home/vlad/Hrozovskyi_Labs_TPIS/Hrozovskyi_IK-31_devops_labs/lab_2
+collected 5 items
+
+tests/tests.py .....                                                     [100%]
+
+============================== 5 passed in 0.54s ===============================
+========================================
+Результат без параметрів: 
+No URL passed to function
+========================================
+Результат з правильною URL: 
+Time is:  08:26:49 PM
+Date is:  10-03-2021
+success
+Доброї ночі
