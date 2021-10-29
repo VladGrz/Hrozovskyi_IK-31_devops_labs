@@ -11,3 +11,8 @@ requests = "*"
 
 [requires]
 python_version = "3.8"
+
+
+[scripts]
+server = "python manage.py runserver 127.0.0.1:8000"
+monitoring = "python3 monitoring.py"
