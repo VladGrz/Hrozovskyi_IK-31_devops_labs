@@ -15,10 +15,10 @@ mv HR_site/HR_site/* HR_site/
 mv HR_site/manage.py ./
 ```
 В результаті вийшла така структура проекту:  
-![Here should be structure of the project, but i can't find a photo](structure.png "Structure")  
+![Here should be structure of the project, but i can't find a photo](img_for_readme/structure.png "Structure")  
 3. Переконався, що все встановилось правильно і запустив Django сервер. Виконав команду `pipenv run python manage.py runserver` та перейшов за посиланням, яке вивелось у консолі;  
 Результат:
-![Here should be result of running server, but i can't find a photo](run_serv.png "Structure")  
+![Here should be result of running server, but i can't find a photo](img_for_readme/run_serv.png "Structure")  
 4. Все запустилось успішно і стартова сторінка Django відображається коректно, тому я зупинив сервер виконавши переривання Ctrl+C та створив коміт із базовим темплейтом сайту. 
 5. Створив темплейт додатку (app) у якому буде описано всі web сторінки сайту. Створив коміт із новоствореними файлами темплейту додатка;
 Для створення темплейту додатку виконав:  
@@ -26,3 +26,11 @@ mv HR_site/manage.py ./
 pipenv run python manage.py startapp hr_main
 ```
 6. Використовуючи можливості PyCharm створив папку hr_main/templates/, а також у даній папці файл з розширенням .html (hr_main.html). Також у папці додатку створив ще один файл hr_main/urls.py. Зробив коміт із даними файлами;
+7. Вказав Django frameworks його назву та де шукати веб сторінки, у файлі `HR_site/settings.py` у змінній `INSTALLED_APPS`, також вніс зміни у файл `HR_site/urls.py` за зразком;
+8. Далі перейшов до додатку: 
+    1. Створив сторінки двох типів - перша буде зчитуватись з .html темплейта. друга сторінка буде просто повертати відповідь у форматі JSON;
+    2. Відкрив та ознайомився із вмістом файла main/views.py;
+9. Щоб поєднати функції із реальними URL шляхами за якими будуть доступні наші веб сторінки заповнив файл main/urls.py згідно зразка.
+10. Запустив сервер та переконався, що сторінки доступні. Виконав коміт робочого Django сайту.  
+![main_page](img_for_readme/main_page.png "Main page")
+![health_page](img_for_readme/health_page.png "Health page")
