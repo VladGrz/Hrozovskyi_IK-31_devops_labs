@@ -25,3 +25,4 @@ mv HR_site/manage.py ./
 ```
 pipenv run python manage.py startapp hr_main
 ```
+6. Використовуючи можливості PyCharm створив папку hr_main/templates/, а також у даній папці файл з розширенням .html (hr_main.html). Також у папці додатку створив ще один файл hr_main/urls.py. Зробив коміт із даними файлами;
