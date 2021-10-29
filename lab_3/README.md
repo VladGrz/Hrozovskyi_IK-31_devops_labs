@@ -15,8 +15,13 @@ mv HR_site/HR_site/* HR_site/
 mv HR_site/manage.py ./
 ```
 В результаті вийшла така структура проекту:  
-![Here should be structure of the project, but i can't find a photo](structure.png "Structure")
-3. Переконався, що все встановилось правильно і запустив Django сервер. Виконав команду `pipenv run python manage.py runserver` та перейшов за посиланням, яке вивелось у консолі;
+![Here should be structure of the project, but i can't find a photo](structure.png "Structure")  
+3. Переконався, що все встановилось правильно і запустив Django сервер. Виконав команду `pipenv run python manage.py runserver` та перейшов за посиланням, яке вивелось у консолі;  
 Результат:
-![Here should be result of running server, but i can't find a photo](run_serv.png "Structure")
+![Here should be result of running server, but i can't find a photo](run_serv.png "Structure")  
 4. Все запустилось успішно і стартова сторінка Django відображається коректно, тому я зупинив сервер виконавши переривання Ctrl+C та створив коміт із базовим темплейтом сайту. 
+5. Створив темплейт додатку (app) у якому буде описано всі web сторінки сайту. Створив коміт із новоствореними файлами темплейту додатка;
+Для створення темплейту додатку виконав:  
+```
+pipenv run python manage.py startapp hr_main
+```
