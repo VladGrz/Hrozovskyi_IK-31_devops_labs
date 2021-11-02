@@ -47,5 +47,19 @@
    ![Health page](imgs/health.png "Health page")
 8. Оскільки веб-сайт готовий і працює, створив ще один контейнер із програмою моніторингу веб-сайту:
    - Створив ще один Dockerfile(Dockerfile.monitor) в якому помістив програму моніторингу;
+   - Виконав білд даного імеджа та дав йому тег `monitoring`:
+   ```
+   docker build -t vladgrz/lab_4 -f Dockerfile.monitor .
+   docker tag vladgrz/lab_4 vladgrz/lab_4:monitoring
+   docker push vladgrz/lab_4:monitoring
+   ```
    - Запустив два контейнери одночасно, в різних вкладках та переконався, що програма моніторингу успішно доступається до сторінок веб-сайту;
+Для запуску сервера:
+```
+docker run -it --name=django --rm -p 8000:8000 vladgrz/lab_4:django
+```
+Для моніторингу:
+```
+docker run -it --name=monitoring --rm --net=host -v $(pwd)/server.log:/app/server.log vladgrz/lab_4:monitoring
+```
    - Комічу `Dockerfile.monitor` та результати роботи програми моніторингу запущеної з Docker контейнера, для цього використав _Docker Volume -v_ та переніс файл `server.log` з контейнера на машину;
