@@ -1,0 +1,49 @@
+INFO 2021-11-02 15:14:12,804 root : Сервер доступний. Дата на сервері: 2021.November.Tuesday. Час: 15:14:12
+INFO 2021-11-02 15:14:12,804 root : Запитувана сторінка: : localhost:8000/health/
+INFO 2021-11-02 15:14:12,804 root : Відповідь сервера місти наступні поля:
+INFO 2021-11-02 15:14:12,805 root : Ключ: date, Значення: year:2021, month:November, day:Tuesday, time:15:14:12, 
+INFO 2021-11-02 15:14:12,805 root : Ключ: current_page, Значення: localhost:8000/health/
+INFO 2021-11-02 15:14:12,805 root : Ключ: server_info, Значення: sysname:posix, systype:linux, 
+INFO 2021-11-02 15:14:12,805 root : Ключ: client_info, Значення: python-requests/2.26.0
+INFO 2021-11-02 15:15:12,871 root : Сервер доступний. Дата на сервері: 2021.November.Tuesday. Час: 15:15:12
+INFO 2021-11-02 15:15:12,871 root : Запитувана сторінка: : localhost:8000/health/
+INFO 2021-11-02 15:15:12,871 root : Відповідь сервера місти наступні поля:
+INFO 2021-11-02 15:15:12,871 root : Ключ: date, Значення: year:2021, month:November, day:Tuesday, time:15:15:12, 
+INFO 2021-11-02 15:15:12,871 root : Ключ: current_page, Значення: localhost:8000/health/
+INFO 2021-11-02 15:15:12,871 root : Ключ: server_info, Значення: sysname:posix, systype:linux, 
+INFO 2021-11-02 15:15:12,872 root : Ключ: client_info, Значення: python-requests/2.26.0
+INFO 2021-11-02 15:16:12,941 root : Сервер доступний. Дата на сервері: 2021.November.Tuesday. Час: 15:16:12
+INFO 2021-11-02 15:16:12,941 root : Запитувана сторінка: : localhost:8000/health/
+INFO 2021-11-02 15:16:12,941 root : Відповідь сервера місти наступні поля:
+INFO 2021-11-02 15:16:12,941 root : Ключ: date, Значення: year:2021, month:November, day:Tuesday, time:15:16:12, 
+INFO 2021-11-02 15:16:12,941 root : Ключ: current_page, Значення: localhost:8000/health/
+INFO 2021-11-02 15:16:12,941 root : Ключ: server_info, Значення: sysname:posix, systype:linux, 
+INFO 2021-11-02 15:16:12,941 root : Ключ: client_info, Значення: python-requests/2.26.0
+INFO 2021-11-02 15:17:12,975 root : Сервер доступний. Дата на сервері: 2021.November.Tuesday. Час: 15:17:12
+INFO 2021-11-02 15:17:12,975 root : Запитувана сторінка: : localhost:8000/health/
+INFO 2021-11-02 15:17:12,975 root : Відповідь сервера місти наступні поля:
+INFO 2021-11-02 15:17:12,975 root : Ключ: date, Значення: year:2021, month:November, day:Tuesday, time:15:17:12, 
+INFO 2021-11-02 15:17:12,975 root : Ключ: current_page, Значення: localhost:8000/health/
+INFO 2021-11-02 15:17:12,975 root : Ключ: server_info, Значення: sysname:posix, systype:linux, 
+INFO 2021-11-02 15:17:12,975 root : Ключ: client_info, Значення: python-requests/2.26.0
+INFO 2021-11-02 15:18:13,014 root : Сервер доступний. Дата на сервері: 2021.November.Tuesday. Час: 15:18:13
+INFO 2021-11-02 15:18:13,014 root : Запитувана сторінка: : localhost:8000/health/
+INFO 2021-11-02 15:18:13,015 root : Відповідь сервера місти наступні поля:
+INFO 2021-11-02 15:18:13,015 root : Ключ: date, Значення: year:2021, month:November, day:Tuesday, time:15:18:13, 
+INFO 2021-11-02 15:18:13,015 root : Ключ: current_page, Значення: localhost:8000/health/
+INFO 2021-11-02 15:18:13,015 root : Ключ: server_info, Значення: sysname:posix, systype:linux, 
+INFO 2021-11-02 15:18:13,015 root : Ключ: client_info, Значення: python-requests/2.26.0
+INFO 2021-11-02 15:19:13,064 root : Сервер доступний. Дата на сервері: 2021.November.Tuesday. Час: 15:19:13
+INFO 2021-11-02 15:19:13,065 root : Запитувана сторінка: : localhost:8000/health/
+INFO 2021-11-02 15:19:13,065 root : Відповідь сервера місти наступні поля:
+INFO 2021-11-02 15:19:13,065 root : Ключ: date, Значення: year:2021, month:November, day:Tuesday, time:15:19:13, 
+INFO 2021-11-02 15:19:13,065 root : Ключ: current_page, Значення: localhost:8000/health/
+INFO 2021-11-02 15:19:13,065 root : Ключ: server_info, Значення: sysname:posix, systype:linux, 
+INFO 2021-11-02 15:19:13,065 root : Ключ: client_info, Значення: python-requests/2.26.0
+INFO 2021-11-02 15:20:13,074 root : Сервер доступний. Дата на сервері: 2021.November.Tuesday. Час: 15:20:13
+INFO 2021-11-02 15:20:13,074 root : Запитувана сторінка: : localhost:8000/health/
+INFO 2021-11-02 15:20:13,074 root : Відповідь сервера місти наступні поля:
+INFO 2021-11-02 15:20:13,074 root : Ключ: date, Значення: year:2021, month:November, day:Tuesday, time:15:20:13, 
+INFO 2021-11-02 15:20:13,074 root : Ключ: current_page, Значення: localhost:8000/health/
+INFO 2021-11-02 15:20:13,074 root : Ключ: server_info, Значення: sysname:posix, systype:linux, 
+INFO 2021-11-02 15:20:13,074 root : Ключ: client_info, Значення: python-requests/2.26.0
