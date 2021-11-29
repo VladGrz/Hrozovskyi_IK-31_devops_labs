@@ -1,0 +1,31 @@
+version: '3.7'
+services:
+  hr_site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vladgrz/lab_4:compose-hr_site
+    container_name: hr_site
+    networks:
+      - public
+    ports:
+      - 8000:8000
+  monitor:
+    build:
+      context: .
+      dockerfile: Dockerfile.monitor
+    image: vladgrz/lab_4:compose-monitor
+    container_name: monitor
+    depends_on:
+      - hr_site
+    network_mode: host
+    volumes:
+      - ./../lab_5/server.log:/app/server.log
+
+volumes:
+  monitor-logs:
+    driver: local
+
+networks:
+  public:
+    driver: bridge
