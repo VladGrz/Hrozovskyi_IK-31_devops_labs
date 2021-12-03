@@ -1,0 +1,51 @@
+language: python
+
+python:
+  - "3.8"
+
+jobs:
+  include:
+    - stage: "Build Lab 2."
+      name: "Run tests for Lab 2"
+      python: 3.8
+      install:
+        - cd ./lab_2/
+        - make install
+      script: make test || true
+    - stage: "Build Lab 3."
+      name: "Run Djungo Server and test it accessibility. Fail to run and test"
+      python: 3.8
+      install:
+        - cd ./lab_3/
+        - chmod +x ./scripts/travis-build.sh
+        - pipenv install
+      script: ./scripts/travis-build.sh
+    - stage: "Build Lab 4."
+      name: "Build Docker images & Home task"
+      services:
+        - docker
+      install:
+        - cd ./lab_4/
+      script:
+        - docker build -t vladgrz/lab_4:django-travis -f Dockerfile .
+        - docker images
+        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push vladgrz/lab_4:django; else echo "PR skip deploy"; fi
+        - docker build -t vladgrz/lab_4:monitoring-travis -f Dockerfile.monitor .
+        - docker images
+        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push vladgrz/lab_4:monitoring-travis; else echo "PR skip deploy"; fi
+    - stage: "Build Lab 5."
+      name: "Build and run Docker images via make"
+      services:
+        - docker
+      install:
+        - cd ./lab_5/
+        - make app
+        - make tests
+      script:
+        - make run
+        - make test-app
+        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; fi
+        - make push
+branches:
+  only:
+    - master
