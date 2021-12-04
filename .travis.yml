@@ -11,7 +11,9 @@ jobs:
       install:
         - cd ./lab_2/
         - make install
-      script: make test || true
+      script:
+        - make test || true
+        - make run || true
     - stage: "Build Lab 3."
       name: "Run Djungo Server and test it accessibility. Fail to run and test"
       python: 3.8
