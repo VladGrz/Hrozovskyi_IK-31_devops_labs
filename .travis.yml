@@ -29,7 +29,7 @@ jobs:
       script:
         - docker build -t vladgrz/lab_4:django-travis -f Dockerfile .
         - docker images
-        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push vladgrz/lab_4:django; else echo "PR skip deploy"; fi
+        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push vladgrz/lab_4:django-travis; else echo "PR skip deploy"; fi
         - docker build -t vladgrz/lab_4:monitoring-travis -f Dockerfile.monitor .
         - docker images
         - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push vladgrz/lab_4:monitoring-travis; else echo "PR skip deploy"; fi
