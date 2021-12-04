@@ -36,6 +36,4 @@ def main(url):
 
 
 if __name__ == '__main__':
-    while(True):
-        main("http://localhost:8000/health")
-        time.sleep(60)
+    main("http://localhost:8000/health")
